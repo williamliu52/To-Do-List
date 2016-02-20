@@ -15,6 +15,7 @@
 		BE95EFAC1C78025800DA9FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE95EFAA1C78025800DA9FDF /* LaunchScreen.storyboard */; };
 		BE95EFB71C78025800DA9FDF /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE95EFB61C78025800DA9FDF /* To_Do_ListTests.swift */; };
 		BE95EFC21C78025800DA9FDF /* To_Do_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE95EFC11C78025800DA9FDF /* To_Do_ListUITests.swift */; };
+		BE95EFD01C781A1400DA9FDF /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE95EFCF1C781A1400DA9FDF /* TextInputTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BE95EFBD1C78025800DA9FDF /* To Do ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE95EFC11C78025800DA9FDF /* To_Do_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListUITests.swift; sourceTree = "<group>"; };
 		BE95EFC31C78025800DA9FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE95EFCF1C781A1400DA9FDF /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				BE95EF9F1C78025800DA9FDF /* AppDelegate.swift */,
 				BE95EFA11C78025800DA9FDF /* FirstViewController.swift */,
+				BE95EFCF1C781A1400DA9FDF /* TextInputTableViewCell.swift */,
 				BE95EFA31C78025800DA9FDF /* SecondViewController.swift */,
 				BE95EFA51C78025800DA9FDF /* Main.storyboard */,
 				BE95EFA81C78025800DA9FDF /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				BE95EFA41C78025800DA9FDF /* SecondViewController.swift in Sources */,
 				BE95EFA01C78025800DA9FDF /* AppDelegate.swift in Sources */,
 				BE95EFA21C78025800DA9FDF /* FirstViewController.swift in Sources */,
+				BE95EFD01C781A1400DA9FDF /* TextInputTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +492,7 @@
 				BE95EFC81C78025800DA9FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE95EFC91C78025800DA9FDF /* Build configuration list for PBXNativeTarget "To Do ListTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				BE95EFCB1C78025800DA9FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE95EFCC1C78025800DA9FDF /* Build configuration list for PBXNativeTarget "To Do ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				BE95EFCE1C78025800DA9FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
