@@ -46,10 +46,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDB-Zy-tFY">
-                                                    <rect key="frame" x="63" y="5" width="237" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cDB-Zy-tFY">
+                                                    <rect key="frame" x="63" y="7" width="236" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kul-ed-uV8">
                                                     <rect key="frame" x="9" y="5" width="46" height="30"/>
@@ -57,9 +57,14 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="-20" id="A7I-fQ-ssQ"/>
                                                 <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="8" id="EYc-dZ-MrD"/>
+                                                <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="8" id="Lcb-TH-Xy5"/>
                                                 <constraint firstItem="cDB-Zy-tFY" firstAttribute="top" secondItem="GuC-kB-FDk" secondAttribute="topMargin" constant="-3" id="NZL-tO-aIw"/>
+                                                <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="15" id="TrJ-J7-QAf"/>
                                                 <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="8" id="a5l-yw-M4N"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cDB-Zy-tFY" secondAttribute="trailing" constant="10" id="cjn-G3-WOB"/>
+                                                <constraint firstItem="cDB-Zy-tFY" firstAttribute="leading" secondItem="Kul-ed-uV8" secondAttribute="trailing" constant="8" id="kkp-xW-Cz8"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Kul-ed-uV8" secondAttribute="bottom" constant="0.5" id="myq-Oi-4xg"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="cDB-Zy-tFY" secondAttribute="bottom" constant="0.5" id="tG1-se-983"/>
                                                 <constraint firstItem="Kul-ed-uV8" firstAttribute="leading" secondItem="GuC-kB-FDk" secondAttribute="leadingMargin" constant="10" id="twr-ko-kzL"/>
@@ -68,7 +73,12 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="A7I-fQ-ssQ"/>
+                                                    <exclude reference="EYc-dZ-MrD"/>
+                                                    <exclude reference="Lcb-TH-Xy5"/>
+                                                    <exclude reference="TrJ-J7-QAf"/>
                                                     <exclude reference="a5l-yw-M4N"/>
+                                                    <exclude reference="yJa-Zz-KxO"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -147,7 +157,7 @@
                                 <rect key="frame" x="55" y="28" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EHV-CY-YmO">

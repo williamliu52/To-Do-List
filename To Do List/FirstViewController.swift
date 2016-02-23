@@ -11,12 +11,11 @@ import UIKit
 var toDoList = [String]()
 
 class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
     
     @IBOutlet var toDoTable: UITableView!
     
     @IBAction func addBtn(sender: AnyObject) {
-        //toDoList.append("Very super long string that is extremely long")
+        toDoList.append("")
         
         for value in toDoList {
             print(value)
@@ -39,21 +38,21 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return toDoList.count
     }
     
     internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        /*let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")*/
+
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! TextInputTableViewCell
-        
-        //cell.textLabel?.text = toDoList[indexPath.row]
         
         return cell
     }
 
     override func viewDidAppear(animated: Bool) {
+        
         toDoTable.reloadData()
+        
+       
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
