@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="28" width="300" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z9K-Jy-tgb" id="GuC-kB-FDk">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cDB-Zy-tFY">
@@ -54,6 +54,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kul-ed-uV8">
                                                     <rect key="frame" x="9" y="5" width="46" height="30"/>
                                                     <state key="normal" title="Done"/>
+                                                    <connections>
+                                                        <action selector="doneBtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fxa-83-60F"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
